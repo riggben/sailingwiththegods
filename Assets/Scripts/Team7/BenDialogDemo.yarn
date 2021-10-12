@@ -1,0 +1,147 @@
+title: Start_Debug
+tags: 
+colorID: 0
+position: -196,-650
+---
+<< reset DialogScreen >>
+<< setpartner DialogScreen CrewTalk >>
+<< setpartnername DialogScreen AllCrewMember >>
+<< setconvotitle DialogScreen Docking_at_Port >>
+
+
+
+<< set $answer_nice to false >>
+<< set $answer_mean to false >>
+<< set $answer_ignore to false >>
+
+<< set $asked_types to false >>
+
+
+
+
+<< citynetworks DialogScreen >>
+<< networkconnections DialogScreen >> 
+<< checkcitytaxes DialogScreen >> 
+
+<< setspeaker DialogScreen other >>
+Hello our Captain, how are you today? Do you have anything for us?
+//<< randomtext DialogScreen greeting any >> 
+
+//<< setend DialogScreen >>
+///{$random_text}
+
+
+[[ Hello team, thank you for asking! |nice_debug]]
+[[ Why I have to answer you'all ? |mean_debug]]
+[[ Ignore them |ignore_intro_debug]]
+
+[[ (TESTING) LEAVE|exit_debug]]
+
+[[Gosh, I'm thirsty!|gatorade_easter_egg]]
+===
+title: nice_debug
+tags: 
+colorID: 0
+position: -1071,-282
+---
+<< set $answer_nice to true >> 
+
+<< setspeaker DialogScreen Jason >> 
+<<increase>>
+I'm good, thanks for asking guy
+
+[[ (TESTING) Say Goodbye |exit_debug]]
+===
+title: mean_debug
+tags: 
+colorID: 0
+position: -504,-289
+---
+<< setspeaker DialogScreen Jason >>
+You guy are nothing to make me answer those question. 
+
+<< setspeaker DialogScreen other >>
+Why you are so mean!? 
+<<decrease>>
+[[ (TESTING) Say Goodbye |exit_debug]]
+===
+title: ignore_intro_debug
+tags: 
+colorID: 0
+position: 343,-238
+---
+<< setspeaker DialogScreen Jason >>
+*turn you head away
+
+<< setspeaker DialogScreen other >>
+Hey, hey! 
+<<decrease>>
+[[ (TESTING) Say Goodbye |exit_debug]]
+===
+title: exit_debug
+tags: 
+colorID: 0
+position: -395,788
+---
+<< setspeaker DialogScreen Jason >>
+
+<<end_dialog>>
+I will talk to you guy later.
+===
+title: gatorade_easter_egg
+tags: 
+colorID: 0
+position: 1415,-483
+---
+<< setspeaker DialogScreen Jason >>
+Gosh, I'm thirsty!
+
+<< setspeaker DialogScreen other>>
+I wonder how much gatorade mix it would take to make the entire ocean into gatorade...
+
+[[What in the world is gatorade? |no_gatorade]]
+[[Approximately 516 quadrillion pounds, obviously. |mega_gatorade]]
+===
+title: no_gatorade
+tags: 
+colorID: 0
+position: 1290,-217
+---
+<<setspeaker DialogueScreen Jason>>
+What in the world is gatorade?
+
+<<setspeaker DialogueScreen other>>
+Oh, nevermind...
+
+<<decrease>>
+
+[[Goodbye |exit_debug]]
+===
+title: mega_gatorade
+tags: 
+colorID: 0
+position: 1560,-225
+---
+<<setspeaker DialogueScreen Jason>>
+Approximately 516 quadrillion pounds, obviously. 
+
+<<setspeaker DialogueScreen other>>
+Wow, I just happen to have that right here!
+
+
+<<gatorade>>
+<<increase>>
+<<increase>>
+<<increase>>
+<<increase>>
+<<increase>>
+<<increase>>
+<<increase>>
+<<increase>>
+<<increase>>
+<<increase>>
+<<increase>>
+
+
+[[Wow, how'd that even fit in your pocket?! |exit_debug]]
+===

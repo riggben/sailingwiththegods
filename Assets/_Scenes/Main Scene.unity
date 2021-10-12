@@ -694,7 +694,7 @@ PrefabInstance:
         type: 3}
       propertyPath: yarnScripts.Array.data[0]
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: bd4ac3a6edea5ed4fb667ff58f7c9f4a,
+      objectReference: {fileID: 2480198943629176163, guid: f103e488b4682a84d874dab28fc7f8fa,
         type: 3}
     - target: {fileID: 3504769730347088719, guid: 279925e90389e7c4e8e585184a0486dc,
         type: 3}
@@ -4738,6 +4738,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e929d2cae4daad48915d7e99870abfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &919474042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7457126755966005520, guid: a5f752995f09a884da6d2e5d35202d46,
+    type: 3}
+  m_PrefabInstance: {fileID: 7291197332434941352}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &937093514 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8098593011703922347, guid: 279925e90389e7c4e8e585184a0486dc,
@@ -8670,9 +8676,11 @@ MonoBehaviour:
   maxMeter: 100
   currentMeter: 0
   meterBar: {fileID: 113772347}
-  diaglogRunner: {fileID: 937093519}
+  dialogRunner: {fileID: 937093519}
   diaglogScreen: {fileID: 937093514}
   testsound: {fileID: 1534823506}
+  water: {fileID: 919474042}
+  mat_gat: {fileID: 2100000, guid: 6b79c37f7d2885f4e874f956d4bb5838, type: 2}
 --- !u!1 &2065100561
 GameObject:
   m_ObjectHideFlags: 0
@@ -15974,6 +15982,31 @@ PrefabInstance:
         type: 3}
       propertyPath: hideMeshRenderer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332645681469524122, guid: a5f752995f09a884da6d2e5d35202d46,
+        type: 3}
+      propertyPath: waterColor.g
+      value: 0.34088355
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332645681469524122, guid: a5f752995f09a884da6d2e5d35202d46,
+        type: 3}
+      propertyPath: waterColor.b
+      value: 0.6226415
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332645681469524122, guid: a5f752995f09a884da6d2e5d35202d46,
+        type: 3}
+      propertyPath: waterShallowColor.g
+      value: 0.16763972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332645681469524122, guid: a5f752995f09a884da6d2e5d35202d46,
+        type: 3}
+      propertyPath: waterShallowColor.b
+      value: 0.24528301
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332645681469524122, guid: a5f752995f09a884da6d2e5d35202d46,
+        type: 3}
+      propertyPath: waterColor.r
+      value: 0.026432883
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5f752995f09a884da6d2e5d35202d46, type: 3}

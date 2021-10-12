@@ -10,16 +10,19 @@ public class CrewDialogManager : MonoBehaviour
 	public int currentMeter;
 	public MeterBar meterBar;
 
-	public DialogueRunner diaglogRunner;
+	public DialogueRunner dialogRunner;
 	public GameObject diaglogScreen;
 	public AudioSource testsound;
+	public GameObject water;
+	public Material mat_gat;
 	void Start()
     {
 		currentMeter = 50;
 		meterBar.SetMeter(currentMeter);
 		//diaglogRunner.AddCommandHandler("end_dialog", TurnOffScene);
-		diaglogRunner.AddCommandHandler("increase", IncreaseMorale);
-		diaglogRunner.AddCommandHandler("decrease", DecreaseMorale);
+		dialogRunner.AddCommandHandler("increase", IncreaseMorale);
+		dialogRunner.AddCommandHandler("decrease", DecreaseMorale);
+		dialogRunner.AddCommandHandler("gatorade", GatoradeMode);
 
 	}
 
@@ -41,6 +44,13 @@ public class CrewDialogManager : MonoBehaviour
 		currentMeter -= 10;
 		meterBar.SetMeter(currentMeter);
 		Debug.Log("Decrease");
+	}
+
+	public void GatoradeMode(string[] parameter) 
+	{
+
+		water.GetComponent<MeshRenderer>().material = mat_gat;
+
 	}
 
 	// Update is called once per frame

@@ -18,5 +18,6 @@ public class MeterBar : MonoBehaviour
 	public void SetMeter(float meter) {
 		slider.value = meter;
 		fill.color = gradient.Evaluate(slider.normalizedValue);
+		
 	}
 }
