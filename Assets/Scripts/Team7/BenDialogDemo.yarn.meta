@@ -1,0 +1,42 @@
+fileFormatVersion: 2
+guid: f103e488b4682a84d874dab28fc7f8fa
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - BenDialogDemo-Start_Debug-0
+  - BenDialogDemo-Start_Debug-1
+  - BenDialogDemo-Start_Debug-2
+  - BenDialogDemo-Start_Debug-3
+  - BenDialogDemo-Start_Debug-4
+  - BenDialogDemo-Start_Debug-5
+  - BenDialogDemo-nice_debug-6
+  - BenDialogDemo-nice_debug-7
+  - BenDialogDemo-mean_debug-8
+  - BenDialogDemo-mean_debug-9
+  - BenDialogDemo-mean_debug-10
+  - BenDialogDemo-ignore_intro_debug-11
+  - BenDialogDemo-ignore_intro_debug-12
+  - BenDialogDemo-ignore_intro_debug-13
+  - BenDialogDemo-exit_debug-14
+  - BenDialogDemo-gatorade_easter_egg-15
+  - BenDialogDemo-gatorade_easter_egg-16
+  - BenDialogDemo-gatorade_easter_egg-17
+  - BenDialogDemo-gatorade_easter_egg-18
+  - BenDialogDemo-no_gatorade-19
+  - BenDialogDemo-no_gatorade-20
+  - BenDialogDemo-no_gatorade-21
+  - BenDialogDemo-mega_gatorade-22
+  - BenDialogDemo-mega_gatorade-23
+  - BenDialogDemo-mega_gatorade-24
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []
